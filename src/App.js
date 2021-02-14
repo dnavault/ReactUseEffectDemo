@@ -35,6 +35,8 @@ function App() {
     { orders: []},
   );
   
+
+
   return (
     
     <Fragment>
@@ -63,7 +65,11 @@ function App() {
         <div>Loading ...</div>
       ) : (
        <>
-{console.log(data.orders)}
+        doFetch(`https://api.hatchways.io/assessment/workers/1`,
+        employee: [(data.worker)],
+          );
+
+        {console.log(data.orders)}
         <ul>
           
         
