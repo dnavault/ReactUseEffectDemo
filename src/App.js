@@ -65,15 +65,14 @@ function App() {
         <div>Loading ...</div>
       ) : (
        <>
-        doFetch(`https://api.hatchways.io/assessment/workers/1`,
-        employee: [(data.worker)],
-          );
+        
 
-        {console.log(data.orders)}
+        {console.log(data.worker)}
         <ul>
           
         
           {data.orders.map(item => (
+
             <li key={item.objectID}>
               <a href={item.name}>{item.name}</a>
             </li>
